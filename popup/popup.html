@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NotionPack Capture</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <article class="form-content" id="form-content">
+      <div class="wrapper">
+        <label for="copiedLink">Tweet/Thread URL</label>
+        <input type="text" id="copiedLink" name="copiedLink" disabled />
+      </div>
+      <div class="wrapper">
+        <label for="handle">Database Handle</label>
+        <select id="handle" class="classic"></select>
+      </div>
+      <div class="wrapper">
+        <label for="tags">Tags (Format: #tag1,#tag2)</label>
+        <input type="text" name="tags" id="tags" />
+        <span id="tag-error" style="color: red"></span>
+      </div>
+      <button id="saveButton" class="btn">
+        <span class="btn-text">Save to Notion</span>
+      </button>
+    </article>
+    <p class="footer">
+      Powered by
+      <a
+        href="https://notionpack.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer__link"
+        >NotionPack</a
+      >
+    </p>
+  </body>
+  <script src="../js/tweet-scapper.js"></script>
+</html>
